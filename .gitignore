@@ -1,4 +1,4 @@
-# Python
+﻿# Python
 .venv/
 __pycache__/
 *.pyc
@@ -13,3 +13,8 @@ backend/.env
 # Run artifacts
 run_events.jsonl
 run_report.json
+
+# Node / Angular
+node_modules/
+frontend/dist/
+frontend/.angular/
