@@ -1,4 +1,4 @@
-import { Injectable, computed, inject, signal } from '@angular/core';
+﻿import { Injectable, computed, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 import { RuntimeEvent } from '../models/events.model';
@@ -47,7 +47,7 @@ export class ResearchService {
     this.mode.set('replay');
 
     const text = await firstValueFrom(
-      this.http.get('assets/demo-run.jsonl', { responseType: 'text' }),
+      this.http.get('demo-run.jsonl', { responseType: 'text' }),
     );
     const all: RuntimeEvent[] = text
       .split('\n')
