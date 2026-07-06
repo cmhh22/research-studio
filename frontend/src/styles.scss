@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  color-scheme: dark;
+
+  /* Surfaces (dark theme) */
+  --bg-0: #0d0f12;      /* page background */
+  --bg-1: #14171c;      /* panels */
+  --bg-2: #1b1f26;      /* cards */
+  --bg-3: #232833;      /* raised / hover */
+
+  /* Text */
+  --text-1: #e6e9ef;    /* primary */
+  --text-2: #9aa3b2;    /* secondary */
+  --text-3: #626b7a;    /* muted */
+
+  /* Borders */
+  --border: #262b34;
+  --border-strong: #333a45;
+
+  /* Accent (blue) — active agents, links, focus */
+  --accent: #4b8fe0;
+  --accent-bg: #14243a;
+  --accent-border: #2b5488;
+
+  /* Status */
+  --ok: #3fb27f;
+  --ok-bg: #10261d;
+  --warn: #d99a2b;
+  --danger: #d9584f;
+  --danger-bg: #2a1513;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "SF Mono", "Cascadia Code", Consolas, "Liberation Mono", monospace;
+
+  --radius: 8px;
+  --radius-lg: 12px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-0);
+  color: var(--text-1);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Thin dark scrollbars */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
